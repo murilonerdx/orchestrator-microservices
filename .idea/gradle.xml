@@ -3,8 +3,9 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="distributionType" value="WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/inventory-service" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../gradle-7.4" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/inventory-service" />
@@ -13,7 +14,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/orchestrator-service" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../gradle-7.4" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/orchestrator-service" />
@@ -22,7 +23,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/order-service" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../gradle-7.4" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/order-service" />
@@ -31,7 +32,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/payment-service" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../gradle-7.4" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/payment-service" />
@@ -40,7 +41,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/product-validation-service" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../gradle-7.4" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/product-validation-service" />
