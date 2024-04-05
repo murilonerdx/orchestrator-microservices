@@ -6,10 +6,10 @@ spring:
     bootstrap-servers: ${KAFKA_BROKER:localhost:9092}
     topic:
       orchestrator: orchestrator-v1
-      product-validation-success: payment-validation-success-v1
-      product-validation-fail: payment-validation-fail-v1
+      product-validation-success: payment-success-v1
+      product-validation-fail: payment-fail-v1
     consumer:
-      group-id: order-group
+      group-id: payment-group
       auto-offset-reset: latest
   datasource:
     driver-class-name: org.postgresql.Driver

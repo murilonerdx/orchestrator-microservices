@@ -5,8 +5,8 @@ spring:
   kafka:
     bootstrap-servers: ${KAFKA_BROKER:localhost:9092}
     topic:
-      start-sage: start-saga-v1
-      notify-ending: start-ending-v1
+      start-saga: start-saga-v1
+      notify-ending: notify-ending-v1
     consumer:
       group-id: order-group
       auto-offset-reset: latest

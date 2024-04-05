@@ -5,10 +5,10 @@ spring:
     bootstrap-servers: ${KAFKA_BROKER:localhost:9092}
     topic:
       orchestrator: orchestrator-v1
-      product-validation-success: inventory-validation-success-v1
-      product-validation-fail: inventory-validation-fail-v1
+      product-validation-success: inventory-success-v1
+      product-validation-fail: inventory-fail-v1
     consumer:
-      group-id: order-group
+      group-id: inventory-group
       auto-offset-reset: latest
   datasource:
     driver-class-name: org.postgresql.Driver
