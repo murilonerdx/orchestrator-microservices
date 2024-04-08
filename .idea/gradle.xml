@@ -41,6 +41,8 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/product-validation-service" />
         <option name="gradleHome" value="$PROJECT_DIR$/../gradle-7.4" />
         <option name="modules">
@@ -50,5 +52,6 @@
         </option>
       </GradleProjectSettings>
     </option>
+    <option name="parallelModelFetch" value="true" />
   </component>
 </project>
