@@ -46,6 +46,7 @@ def remove_remaining_containers():
 
 
 if __name__ == "__main__":
+    os.system("set PATH=C:\Program Files\Java\jdk-17.0.5\bin;%PATH%")
     print("Pipeline started!")
     build_all_applications()
     while len(threads) > 0:

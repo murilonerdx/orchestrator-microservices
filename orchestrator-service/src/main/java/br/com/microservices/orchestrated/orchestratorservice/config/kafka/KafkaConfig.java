@@ -1,5 +1,6 @@
-package br.com.microservices.orchestrated.orchestratorservice.kafka;
+package br.com.microservices.orchestrated.orchestratorservice.config.kafka;
 
+import br.com.microservices.orchestrated.orchestratorservice.core.enums.ETopics;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
@@ -15,8 +16,6 @@ import org.springframework.kafka.core.*;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import static br.com.microservices.orchestrated.orchestratorservice.kafka.ETopics.*;
 
 
 @EnableKafka
@@ -79,51 +78,51 @@ public class KafkaConfig {
 
 	@Bean
 	public NewTopic startSagaTopic() {
-		return buildTopic(START_SAGA.getTopic());
+		return buildTopic(ETopics.START_SAGA.getTopic());
 	}
 
 	@Bean
 	public NewTopic orchestratorTopic() {
-		return buildTopic(BASE_ORCHESTRATOR.getTopic());
+		return buildTopic(ETopics.BASE_ORCHESTRATOR.getTopic());
 	}
 
 	@Bean
 	public NewTopic finishSuccessTopic() {
-		return buildTopic(FINISH_SUCCESS.getTopic());
+		return buildTopic(ETopics.FINISH_SUCCESS.getTopic());
 	}
 
 	@Bean
 	public NewTopic finishFailTopic() {
-		return buildTopic(FINISH_FAIL.getTopic());
+		return buildTopic(ETopics.FINISH_FAIL.getTopic());
 	}
 
 	@Bean
 	public NewTopic productValidationSuccessTopic() {
-		return buildTopic(PRODUCT_VALIDATION_SUCCESS.getTopic());
+		return buildTopic(ETopics.PRODUCT_VALIDATION_SUCCESS.getTopic());
 	}
 
 	@Bean
 	public NewTopic productValidationFailTopic() {
-		return buildTopic(PRODUCT_VALIDATION_FAIL.getTopic());
+		return buildTopic(ETopics.PRODUCT_VALIDATION_FAIL.getTopic());
 	}
 
 	@Bean
 	public NewTopic paymentSuccessTopic() {
-		return buildTopic(PAYMENT_SUCCESS.getTopic());
+		return buildTopic(ETopics.PAYMENT_SUCCESS.getTopic());
 	}
 
 	@Bean
 	public NewTopic paymentValidationFailTopic() {
-		return buildTopic(PAYMENT_FAIL.getTopic());
+		return buildTopic(ETopics.PAYMENT_FAIL.getTopic());
 	}
 
 	@Bean
 	public NewTopic inventoryValidationSuccessTopic() {
-		return buildTopic(INVENTORY_SUCCESS.getTopic());
+		return buildTopic(ETopics.INVENTORY_SUCCESS.getTopic());
 	}
 
 	@Bean
 	public NewTopic inventoryValidationFailTopic() {
-		return buildTopic(INVENTORY_FAIL.getTopic());
+		return buildTopic(ETopics.INVENTORY_FAIL.getTopic());
 	}
 }
