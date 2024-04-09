@@ -5,10 +5,10 @@ spring:
   kafka:
     bootstrap-servers: ${KAFKA_BROKER:localhost:9092}
     topic:
-      start-saga: start-saga
-      finish-success: finish-success
-      finish-fail: finish-fail
-      orchestrator: orchestrator
+      start-saga: start-saga-v1
+      finish-success: finish-success-v1
+      finish-fail: finish-fail-v1
+      orchestrator: orchestrator-v1
     consumer:
       group-id: orchestrator-group
       auto-offset-reset: latest
