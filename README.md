@@ -1,4 +1,3 @@
-<img src=".github/arquitetura.png" />
 
 # Projeto: Curso Udemy - Arquitetura de Microsserviços: Padrão Saga Orquestrado
 
