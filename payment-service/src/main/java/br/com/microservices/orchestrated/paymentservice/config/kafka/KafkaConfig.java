@@ -28,10 +28,10 @@ public class KafkaConfig {
 	@Value("${spring.kafka.consumer.auto-offset-reset}")
 	private String autoOffsetReset;
 
-	@Value("${spring.kafka.topic.product-validation-fail}")
+	@Value("${spring.kafka.topic.payment-fail}")
 	private String paymentFailTopic;
 
-	@Value("${spring.kafka.topic.product-validation-success}")
+	@Value("${spring.kafka.topic.payment-success}")
 	private String paymentSuccessTopic;
 
 	private final Integer REPLICA_COUNT = 1;
